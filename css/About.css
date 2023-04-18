@@ -1,0 +1,15 @@
+
+.aboutimgholder{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    background-color: beige;
+}
+
+.aboutimg{
+    width: 50%;
+    height: 450px;
+}
+.abouttextholder{
+    width: 30%;
+}

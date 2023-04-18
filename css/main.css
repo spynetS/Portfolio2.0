@@ -1,0 +1,72 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+.btn{
+    background-color: #407BD5;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+
+    transition-duration: 100ms;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #4a8eed;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100vw;
+    z-index: 40;
+}
+.navtitles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    
+}
+.navtitle{
+    font-weight: 800;
+    color: #333333;
+    font-size: 24px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.selectedtitle{
+    color: #407BD5;
+}
+
+.navtitle:hover{
+    color: #bbbbbb;
+}
+h1{
+    font-size: 48px;
+}
+h2, h3{
+    color: #989898;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.startimg{
+    border-radius: 100%;
+}
+.maintext{
+}
+
