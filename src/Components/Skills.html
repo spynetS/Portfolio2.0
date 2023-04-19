@@ -1,0 +1,23 @@
+{
+import os
+
+
+folder_path = './images/skills'  # replace with your folder path
+file_names = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
+
+def skills():
+    global file_names
+    sk = ""
+    for i in file_names:
+        sk+= f'<Skill img="../images/skills/{i}" title="{i}" ></Skill>'
+    return sk
+}
+
+
+<div class="main">
+
+    <div class="table" >
+        {skills()}
+    </div>
+
+</div>

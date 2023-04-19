@@ -6,7 +6,20 @@
     from{margin-left: 50vh;}
     to{margin-left: 0;}
   }
-
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bob-1{
+    animation: up-down 1s infinite;
+}
 .maintitle{
     animation-name: slide;
     animation-duration: 2s;

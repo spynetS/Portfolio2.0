@@ -62,7 +62,7 @@ def componentsInHtml(file=""):
             comp += c
             continue
         # we end listen and we add the component read to the components list
-        if(c == ">" or c == "/") :
+        if(c == ">") :
             comp += "/>"
             splittet = compName.split(" ")
 
@@ -206,3 +206,5 @@ manager = FlagManager([
     Flag("start", "--start", "auto compiles", start),
 ])
 manager.check()
+
+import os

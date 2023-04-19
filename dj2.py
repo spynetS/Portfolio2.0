@@ -41,12 +41,17 @@ class PyTml:
         return text
 
     def toPythonFile(self,text):
-        return self.getDefines(text)+"out =(f'''"+self.getReturn(text)+"''')"
+        let = self.getDefines(text)+"out =(f'''"+self.getReturn(text)+"''')"
+        print(let)
+        return let
     
 
     def compiles(self,text):
         # to topythonfile will set a out variable to the putput
         # here we return that value
         na = {}
-        exec(self.toPythonFile(text),na)
+        try:
+            exec(self.toPythonFile(text),na)
+        except Exception as e:
+            print("Python Error, ", e)
         return(na["out"])
