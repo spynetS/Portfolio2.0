@@ -1,6 +1,6 @@
 // scroll spy
 document.addEventListener("scroll", e=>{
-    var b = Math.round(window.scrollY / window.screen.height)
+    var b = Math.round((window.scrollY) / window.screen.height*1.2)
     setActive(b)
 })
 
@@ -9,6 +9,7 @@ function setActive(id){
     console.log(id)
     let idn = id;
     if(typeof(id) != 'string'){
+        console.log(id)
         switch(id){
             case 0:
                 idn = "ahome";
