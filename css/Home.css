@@ -18,7 +18,7 @@
   }
 }
 .bob-1{
-    animation: up-down 1s infinite;
+    animation: up-down 2s infinite;
 }
 .maintitle{
     animation-name: slide;

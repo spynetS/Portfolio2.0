@@ -1,0 +1,21 @@
+
+.project{
+    width: 100vw;
+    height: 50vh;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.project img{
+    height: 30vh;
+}
+.project div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.portfolio{
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+}
