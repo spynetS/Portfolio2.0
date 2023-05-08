@@ -13,7 +13,12 @@
     flex-direction: row;
     gap: 10px;
 }
-
+.dark{
+    background-color: rgb(43, 43, 43);
+}
+.dark h1 , .dark h2 ,.dark h3{
+    color: white;
+}
 .portfolio{
     padding-top: 110px;
     display: flex;

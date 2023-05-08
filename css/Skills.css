@@ -10,6 +10,25 @@
     justify-content: space-between;
     align-items: center;
 }
+.socials{
+    display: flex;
+    height: 60%;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: end;
+    flex-direction: row;
+}
+
+.socials img{
+    height: 80px;
+}
+.socials a {
+    transition-duration: 200ms;
+}
+.socials a:hover{
+    transform: translate(0, -7px);
+}
+
 
 .skill{
     display: flex;
