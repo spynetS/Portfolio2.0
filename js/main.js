@@ -8,6 +8,7 @@ document.addEventListener("scroll", e=>{
 function setActive(id){
     console.log(id)
     let idn = id;
+    
     if(typeof(id) != 'string'){
         console.log(id)
         switch(id){
@@ -20,25 +21,29 @@ function setActive(id){
             case 2:
                 idn = "askills";
                 break;
-            case 3:
-                idn = "aportfolio";
-                break;
             case 4:
+            case 5:
+            case 6:
+            case 7:
+                idn = "ajava";
+                break;
+            case 8:
                 idn = "acontact";
                 break;
         }
     }
-    document.getElementById("ahome").className = "navtitle"
-    document.getElementById("aabout").className = "navtitle"
-    document.getElementById("askills").className = "navtitle"
-    document.getElementById("aportfolio").className = "navtitle"
-    document.getElementById("acontact").className = "navtitle"
-    document.getElementById("ahome").className = "navtitle"
+
+    document.getElementById("ahome").className =      "navtitle"
+    document.getElementById("aabout").className =     "navtitle"
+    document.getElementById("askills").className =    "navtitle"
+    document.getElementById("ajava").className =      "navtitle"
+    document.getElementById("acontact").className =   "navtitle"
+    document.getElementById("ahome").className =       "navtitle"
 
     document.getElementById("home").className =      "invis"
     document.getElementById("about").className =     "invis"
     document.getElementById("skills").className =    "invis"
-    document.getElementById("portfolio").className = "invis"
+    document.getElementById("java").className =      "invis"
     document.getElementById("contact").className =   "invis"
     document.getElementById("home").className =      "invis"
     

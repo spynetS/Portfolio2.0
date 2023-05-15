@@ -9,7 +9,8 @@ def skills():
     global file_names
     sk = ""
     for i in file_names:
-        sk+= f'<Skill img="../images/skills/{i}" title="{i}" ></Skill>'
+        tag = i.replace("logo.png", "")
+        sk+= f'<Skill img="../images/skills/{i}" title="{tag}" tag="#{tag}" ></Skill>'
     return sk
 }
 
