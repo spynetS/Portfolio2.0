@@ -26,17 +26,17 @@ function setActive(id){
             case 6:
             case 7:
             case 8:
-            case 9:
-            case 10:
                 idn = "areact";
                 break;
+            case 9:
+            case 10:
             case 11:
             case 12:
                 idn = "acontact";
                 break;
         }
     }
-    
+
     document.getElementById("ahome").className =      "navtitle"
     document.getElementById("aabout").className =     "navtitle"
     document.getElementById("askills").className =    "navtitle"
@@ -44,16 +44,16 @@ function setActive(id){
     document.getElementById("acontact").className =   "navtitle"
     document.getElementById("ahome").className =       "navtitle"
 
-    document.getElementById("home").className =      "invis"
-    document.getElementById("about").className =     "invis"
-    document.getElementById("skills").className =    "invis"
-    document.getElementById("react").className =      "invis"
-    document.getElementById("contact").className =   "invis"
-    document.getElementById("home").className =      "invis"
-    
-    
+    document.getElementById("home").className =      "fadeout-1 invis"
+    document.getElementById("about").className =     "fadeout-1 invis"
+    document.getElementById("skills").className =    "fadeout-1 invis"
+    document.getElementById("react").className =     "fadeout-1 invis"
+    document.getElementById("contact").className =   "fadeout-1 invis"
+    document.getElementById("home").className =      "fadeout-1 invis"
+
+
     document.getElementById(idn.substring(1)).className = "fadein-1"
     document.getElementById(idn).className = "navtitle selectedtitle"
-    
+
 
 }

@@ -22,6 +22,12 @@
     transform: translateY(-10px);
 }
 
+.skills{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
 .skill img{
     transition-duration: 200ms;
     width: 150px;
