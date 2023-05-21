@@ -15,9 +15,14 @@
     height: 200vh;
 }
 .project img{
-    height: 30vh;
+    max-height: 30vh;
     transition-duration: 1s;
     cursor: zoom-in;
+}
+@media only screen and (max-width: 600px) {
+    .project img{
+        max-height: 10vh;
+    }
 }
 .project img:hover{
     scale:1.6;

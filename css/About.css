@@ -13,3 +13,22 @@
 .abouttextholder{
     width: 30%;
 }
+
+@media only screen and (max-width: 600px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutimgholder{
+        width: 90%;
+    }
+    .abouttextholder{
+        width: 90%;
+    }
+    .aboutimg{
+        width: 100%;
+    }
+    .img1{
+        display: none;
+    }
+}

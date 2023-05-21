@@ -33,9 +33,47 @@
     gap:20px
 }
 
+.socials{
+    display: flex;
+    height: 60%;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: end;
+    flex-direction: row;
+}
+
+.socials img{
+    height: 80px;
+}
+.socials a {
+    transition-duration: 200ms;
+}
+.socials a:hover{
+    transform: translate(0, -7px);
+}
+
 .sub{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+@media only screen and (max-width: 600px) {
+    .socials{
+        height: auto;
+    }
+    .socials img{
+        height: 50px;
+    }
+    .side{
+        width: 90%;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        height: 120vh;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }
