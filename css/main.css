@@ -18,6 +18,9 @@ body{
     transition-duration: 100ms;
     cursor: pointer;
 }
+.btnA{
+    text-decoration: none;
+}
 .btn:hover{
     background-color: #4a8eed;
 }
@@ -87,8 +90,7 @@ h2, h3{
 }
 .startimg{
     border-radius: 100%;
-}
-.maintext{
+    width: 30%;
 }
 
 .row{

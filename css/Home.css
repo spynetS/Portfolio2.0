@@ -27,7 +27,7 @@
 
 .fadein-1{
     animation-name: fadein;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 .fadein-2{
     animation-name: fadein;

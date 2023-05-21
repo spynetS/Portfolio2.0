@@ -1,16 +1,29 @@
 
 .project{
-    width: 100vw;
-    height: 50vh;
+    width: 80vw;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding: 30px;
 
+}
+
+.mainport{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 200vh;
 }
 .project img{
     height: 30vh;
+    transition-duration: 1s;
+    cursor: zoom-in;
+}
+.project img:hover{
+    scale:1.6;
+    cursor: zoom-in;
 }
 .project div{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
 }
 .dark{
     background-color: rgb(43, 43, 43);
@@ -22,4 +35,5 @@
     padding-top: 110px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
