@@ -8,6 +8,7 @@ file_names = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(
 def skills():
     global file_names
     sk = ""
+    file_names.reverse()
     for i in file_names:
         tag = i.replace("logo.png", "")
         sk+= f'<Skill img="../images/skills/{i}" title="{tag}" tag="#{tag}" ></Skill>'
