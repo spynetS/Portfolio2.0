@@ -25,13 +25,9 @@ function setActive(id){
             case 5:
             case 6:
             case 7:
-            case 8:
                 idn = "areact";
                 break;
-            case 9:
-            case 10:
-            case 11:
-            case 12:
+            default:
                 idn = "acontact";
                 break;
         }
