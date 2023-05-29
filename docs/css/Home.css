@@ -1,0 +1,67 @@
+@keyframes fadeout {
+    from{opacity: 100;}
+    to{opacity: 0;}
+  }
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 100;}
+  }
+@keyframes slide {
+    from{margin-left: 50vh;}
+    to{margin-left: 0;}
+  }
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bob-1{
+    animation: up-down 2s infinite;
+}
+.maintitle{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+.fadeout-1{
+    animation-name: fadeout;
+    animation-duration: 0.5s;
+}
+.fadein-1{
+    animation-name: fadein;
+    animation-duration: 0.5s;
+}
+.fadein-2{
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+.fadein-3{
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+.fadein-4{
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+.fadein-5{
+    animation-name: fadein;
+    animation-duration: 5s;
+}
+.fadein-6{
+    animation-name: fadein;
+    animation-duration: 6s;
+}
+.fadein-7{
+    animation-name: fadein;
+    animation-duration: 7s;
+}
+
+.invis{
+    opacity: 0;
+}

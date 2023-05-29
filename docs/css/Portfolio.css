@@ -1,0 +1,44 @@
+
+.project{
+    width: 80vw;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding: 30px;
+
+}
+
+.mainport{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 200vh;
+}
+.project img{
+    max-height: 30vh;
+    transition-duration: 1s;
+    cursor: zoom-in;
+}
+@media only screen and (max-width: 600px) {
+    .project img{
+        max-height: 10vh;
+    }
+}
+.project img:hover{
+    scale:1.6;
+    cursor: zoom-in;
+}
+.project div{
+}
+.dark{
+    background-color: rgb(43, 43, 43);
+}
+.dark h1 , .dark h2 ,.dark h3{
+    color: white;
+}
+.portfolio{
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
