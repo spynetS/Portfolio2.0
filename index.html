@@ -1,175 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	 -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Website</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-	<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+		<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-	
-	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-	<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-
-	<script type="text/javascript" src="./index.js" defer></script>
-	
-	<style>
-		.jura-font {
-				font-family: "Jura", sans-serif;
-				font-optical-sizing: auto;
-				font-weight: <weight>;
-				font-style: normal;
-		}
-		.glow {
-				-webkit-box-shadow:0px 0px 85px 45px rgba(82,47,207,0.45);
-				-moz-box-shadow: 0px 0px 85px 45px rgba(82,47,207,0.45);
-				box-shadow: 0px 0px 85px 45px rgba(82,47,207,0.45);
-		}
-
-	</style>
-	<script type="text/javascript">
-
-		function about(){
-				return {
-						cards: [
-								{
-										title: 'Education',
-										p:"I have studied at Jönköping University since 2023. I'm studying computer sience with AI master"
-								},
-								{
-										title: 'Work',
-										p:"I have worked about 2.5 years as a webdeveloper at SmartCash AB. I also have worked freelance and sold 2 websites."
-
-								}
-						]
-				};
-		}
-	</script>
-	
-</head>
-
-<body class="jura-font" >
-	<nav class="flex flex-row h-16 w-screen absolute top-0 justify-around items-center">
-		<a class="text-2xl text-white hover:text-gray-200 "href="">Home</a>
-		<a class="text-2xl text-white hover:text-gray-200 "href="">About</a>
-		<a class="text-2xl text-white hover:text-gray-200 "href="">Projects</a>
-		<a class="text-2xl text-white hover:text-gray-200 "href="">Contact</a>
-	</nav>
-
-	
-	<section id="hero" class="flex flex-col items-center justify-center h-screen w-screen bg-linear-to-b from-black to-[#512FCF] gap-2 text-center" >
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
 		
-		<h1 id="h1" class="text-7xl text-white " >Hello World! <br/>Alfred here! </h1>
-		<p class="text-white text-xl w-[800px] mt-5">CS student & web developer since 12, building fun projects along the way—scroll down to explore!</p>
-		<a href="#recent-work" class=" mt-4 cursor-pointer px-6 py-3 rounded-lg text-white font-semibold bg-[#512FCF] hover:bg-[#6b47f0] shadow-lg hover:shadow-[0_0_20px_#512FCF] transition-all duration-300">
-			Se my work
-		</a>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+		<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+		<script type="text/javascript" src="./index.js" defer></script>
+		<script type="text/javascript" src="./projects.js" ></script>
+
+		<link href="style.css" rel="stylesheet"/>
 		
-	</section>
-	
-	<section id="about" class="text-center flex flex-col items-center  h-screen w-screen bg-linear-to-b to-black from-[#512FCF] gap-2 text-center pt-12 gap-12" >
-		<h2 class="text-6xl text-white" >About me</h2>
+	</head>
 
-		<div class="h-[1px] w-[300px] bg-[#512FCF] glow"></div>
+	<body class="jura-font bg-[#101010]" >
+
+		<div id="cursor" ></div>
+
+		<nav class="fixed top-0 z-50 flex flex-row h-16 w-screen absolute top-0 justify-around items-center">
+			<button id="homeButton" class="text-2xl text-white hover:text-gray-200 " href="#hero">Home</button>
+			<button id="aboutButton" class="text-2xl text-white hover:text-gray-200 " href="#about">About</button>
+			<button id="projectButton" class="text-2xl text-white hover:text-gray-200 " href="#recent-work">Projects</button>
+			<button id="contactButton" class="text-2xl text-white hover:text-gray-200 " href="#contact">Contact</button>
+		</nav>
+
 		
-		<p class="text-white text-xl w-[800px]">I’m a CS STUDENT with a passion for programming. I start at the age of 12 with some small programming. And have been hooked since. I have worked as a web dev for 2.5 years and created some fun project.</p>
-
-		<div x-data="about()" class="grid grid-cols-2 grid-rows-2 p-12 gap-12" >
-
-			<template x-for="card in cards" >
-				<div class="card relative rounded-lg border-2 border-[#512FCF] text-left flex flex-row h-[300px]  overflow-hidden glow" >
-					<div class="p-6 flex flex-col justify-between w-1/2">
-						<h3 class="text-3xl text-[#B7A3FF]" x-text="card.title" ></h3>
-						<p class="text-xl text-white" x-text="card.p"></p>
-						<p></p>
-					</div>
-					<div class="absolute -bottom-5 -right-5 border-[1px] border-[#512FCF] rounded-full h-[100px] w-[100px] flex items-center justify-center glow" >
-						<svg fill="#512FCF" width="60px" height="60px" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" stroke="#512FCF" stroke-width="0.00014"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.028000000000000004"></g><g id="SVGRepo_iconCarrier"><path d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"></path></g></svg>
-					</div>
-				</div>
-
-			</template>
+		<section id="hero" class="flex flex-col items-center justify-center h-screen w-screen bg-linear-to-b from-black via-[#35227D] to-[#512FCF] gap-2 text-center" >
 			
-		</div>
+			<h1 id="h1" class="md:text-7xl text-4xl text-white " >Hello World! <br/>Alfred here! </h1>
+			<p class="text-white md:text-xl md:w-[800px] text-md mt-5">CS student & web developer since 12, building fun projects along the way—scroll down to explore!</p>
+			<button id="cta" href="#recent-work" class=" mt-4 cursor-pointer px-6 py-3 rounded-lg text-white font-semibold bg-[#512FCF] hover:bg-[#6b47f0] shadow-lg hover:shadow-[0_0_20px_#512FCF] transition-all duration-300">
+				Se my work
+			</button>
+			
+		</section>
 		
-	</section>
+		<section id="about" class="text-center flex flex-col items-center  min-h-screen w-screen bg-linear-to-b to-black from-[#512FCF] gap-2 text-center pt-12 gap-12" >
+			<h2 class="md:text-6xl text-2xl text-white" >About me</h2>
 
-	<section id="recent-work" class="relative flex flex-col p-12 bg-[url('shapebackground_1.png')] items-center justify-center min-h-screen w-screen gap-2 text-center text-white " >
+			<div class="h-[1px] w-[300px] bg-[#512FCF] glow"></div>
+			
+			<p class="text-white md:text-xl text-md md:w-[800px]">I’m a CS STUDENT with a passion for programming. I start at the age of 12 with some small programming. And have been hooked since. I have worked as a web dev for 2.5 years and created some fun project.</p>
 
-		<div class="mb-32">
-			<h2 class="text-5xl mb-2" >My recent Work</h2>
-			<p>A collection of projects I have worked on</p>
-		</div>		
-		<div x-data="{cards:[1,2,3,4]}" class="flex flex-col gap-12" >
-			<template x-for="(card, index) in cards">
-				<div class="flex flex-col container mx-auto relative text-left h-96"
-						 :class="index % 2 === 0 ? '' : 'items-end'"
-						 >
+			<div x-data="about()" class="md:grid md:grid-cols-2 flex flex-col grid-rows-2 p-12 gap-12" >
 
-					<h2 class="text-2xl mb-12 font-bold" >Example project</h2>
-					<p class="p-5 w-4/7 backdrop-blur-xl rounded-lg z-50" >
-						Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
-					</p>
-
-
-						<i class=" pl-10 fa fa-github text-2xl" ></i>
-
-
-
-					<div class="backdrop-blur-xl rounded-lg p-5 top-0  absolute z-10 w-1/2 h-full"
-							 :class="index % 2 === 0 ? 'right-0' : 'left-0'"
-							 >
-						<img src="html.png" alt="example image" class="w-full h-full object-cover rounded-lg"/>
+				<template x-for="card in cards" >
+					<div class="card relative rounded-lg border-2 border-[#512FCF] text-left flex flex-row h-[300px]  overflow-hidden glow" >
+						<div class="p-6 flex flex-col justify-between w-1/2">
+							<h3 class="text-3xl text-[#B7A3FF]" x-text="card.title" ></h3>
+							<p class="text-xl text-white" x-text="card.p"></p>
+							<p></p>
+						</div>
+						<div class="absolute -bottom-5 -right-5 border-[1px] border-[#512FCF] rounded-full h-[100px] w-[100px] flex items-center justify-center glow" >
+							<i :class="`${card.icon} text-[#512FCF] text-3xl`"></i>
+						</div>
 					</div>
 
-
-				</div>
-			</template>
-		</div>
-		
-		
-	</section>
-	
-	<section class="flex flex-col bg-[#101010] items-center justify-center h-screen w-screen gap-2 text-center text-white" >
-		<div class="p-5 w-screen hidden" >
-			<p class="font-bold text-xl">My Skills</p>
-			<p>Linux</p>
-		</div>
-
-		<div  class="container mx-auto w-full h-full mt-16   md:grid grid-cols-2" >
-			<div class="md:flex flex-col items-center hidden" >
-				<img id="tux" src="tux.png" alt="" />
-			</div>
-
-			
-			<div class="md:pr-12 flex flex-col items-center" >
-				<h2 class="md:text-5xl text-3xl text-center mb-12 " >I've walked the command line for years—Linux isn't just an OS, it's a way of thinking.</h2>
-				<p class="text-center text-xl w-2/3 mb-4">I have used linux as main operating system since 2020 and I really enjoy it. I have learned a lot and is very comfortable in an linux environment.</p>
-
-				<span class="text-white">[spy@spydesktop]$ 
-					<span class="typer text-white" id="main" data-colors="white" data-words="sudo pacman -S bug-fixer" data-delay="100" data-deleteDelay="1000"></span>
-					<span class="cursor" data-owner="main"></span>
-				</span>
+				</template>
 				
 			</div>
-		</div>
-	</section>
+			
+		</section>
+
+		<section id="recent-work" class="relative flex flex-col p-12 bg-[url('shapebackground_1.png')] items-center justify-center min-h-screen w-screen gap-2 text-center text-white " >
+
+			<div class="mb-32">
+				<h2 class="md:text-5xl text-2xl mb-2" >My recent Work</h2>
+				<p>A collection of projects I have worked on</p>
+			</div>		
+			<div x-data="myProjects()" class="flex flex-col gap-12" >
+				<template x-for="(card, index) in cards">
+					<div class="card flex flex-col container mx-auto relative text-left min-h-[500px] overflow-hidden"
+							 :class="index % 2 === 0 ? '' : 'items-end'"
+							 >
+
+						<a :href="`https://github.com/${card.github}`" class="md:text-5xl text-2xl mb-12 font-bold" x-text="card.title">Example project</a>
+						<p class="p-5 md:w-4/7 backdrop-blur-xl rounded-lg z-50" x-text="card.description">
+							Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
+						</p>
+						<a :href="`https://github.com/${card.github}`" :class="card.github==='' ? 'hidden' : ''">
+							<i class=" pl-10 devicon-github-plain text-3xl text-2xl" ></i>
+						</a>
+						<div class="backdrop-blur-xl rounded-lg p-5 top-0  md:absolute z-10 md:w-1/2 w-full h-full"
+								 :class="index % 2 === 0 ? 'right-0' : 'left-0'"
+								 >
+							<div class="flex flex-row gap-2 h-full w-full">
+								<img 
+									x-bind:src="card.image" 
+									alt="example image" 
+									class="h-full w-auto object-contain rounded-lg"
+									/>
+								<img 
+									x-bind:src="card.image2" 
+									alt="example image" 
+									:class="card.image2 ? '' : 'hidden'" 
+									class="h-full w-auto object-contain rounded-lg"
+									/>
+							</div>
+							
+						</div>
 
 
-	<section id="otherTech" class="grid grid-rows-6  relative w-screen h-screen text-white" >
-		<img id="shapes" src="shapebackground.png" class="absolute w-screen h-screen top-0 left-0" alt="" />
-		<div id="other-banner" class="z-50 row-start-2 row-span-4 bg-[#000000a4] flex flex-col items-center p-8" >
-			<h2 class="text-5xl text-center mb-6 " >Some Other technolegies</h2>
+					</div>
+				</template>
+			</div>
+			
+			
+		</section>
+		
+		<section id="linux" class="flex flex-col bg-[#101010] items-center justify-center h-screen w-screen gap-2 text-center text-white" >
+			<div class="p-5 w-screen hidden" >
+				<p class="font-bold text-xl">My Skills</p>
+				<p>Linux</p>
+			</div>
+
+			<div  class="container mx-auto w-full h-full mt-16   md:grid grid-cols-2" >
+				<div class="md:flex flex-col items-center hidden" >
+					<img id="tux" src="images/tux.png" alt="" />
+				</div>
+
+				
+				<div class="md:pr-12 flex flex-col items-center" >
+					<h2 class="md:text-5xl text-2xl text-center w-2/3 mb-12 " >I've walked the command line for years—Linux isn't just an OS, it's a way of thinking.</h2>
+					<p class="text-center md:text-xl text-md w-2/3 mb-4">I have used linux as main operating system since 2020 and I really enjoy it. I have learned a lot and is very comfortable in an linux environment.</p>
+
+					<span class="text-white">[spy@spydesktop]$ 
+						<span class="typer text-white" id="main" data-colors="white" data-words="sudo pacman -S bug-fixer" data-delay="100" data-deleteDelay="1000"></span>
+						<span class="cursor" data-owner="main"></span>
+					</span>
+					
+				</div>
+			</div>
+		</section>
+
+
+		<img id="shapes" src="images/shapebackground.png" class="fixed w-screen h-screen top-screen left-0" alt="" />
+		<section id="otherTech" class="grid grid-rows-6  relative w-screen h-screen text-white" >
+
+			<div id="other-banner" class="z-50 row-start-2 row-span-4 bg-[#000000a4] flex flex-col items-center p-8" >
+				<h2 class="text-5xl text-center mb-6 " >Some Other technolegies</h2>
 				<p class="text-center text-xl w-2/3">Tools change, principles last. I master both.</p>
 				<div id="tools-container" class="flex flex-wrap md:w-1/2 w-full gap-5  mt-16 justify-around h-[80px] md:text-5xl text-3xl" >
 
@@ -183,7 +168,7 @@
 											 ] 
 											 }" class="flex flex-wrap justify-center gap-4">
 						<template x-for="icon in icons" :key="icon">
-							<div class="bg-gray-800 p-2 rounded-full h-14 w-14 flex items-center justify-center hover:shadow-[0_0_15px_#512FCF] transition-shadow duration-300">
+							<div class="icon bg-gray-800 p-2 rounded-full h-14 w-14 flex items-center justify-center hover:shadow-[0_0_15px_#512FCF] transition-shadow duration-300">
 								<i :class="`devicon-${icon}-plain colored text-3xl`"></i>
 							</div>
 						</template>
@@ -194,12 +179,12 @@
 
 		</section>
 
-		<section id="contact" class="md:grid grid-cols-2  w-screen min-h-screen " >
+		<section id="contact" class="md:grid grid-cols-2  w-screen min-h-screen  text-white pt-12" >
 			<div class="flex flex-col items-center gap-12 z-10 text-center" >
 				<h2 id="contact-title" class="md:text-3xl text-xl font-semibold w-1/2" >Let's build something awesome. Drop me a message!</h2>
 
 				<div id="contact-image" class="md:flex flex-row gap-12 hidden" >
-					<img src="mig.png" alt="" />
+					<img src="images/mig.png" alt="" />
 					<div class="flex flex-col items-start justify-end gap-5 " >
 
 						<a href="https://github.com/spynetS" class="flex flex-row gap-2 " >
@@ -240,7 +225,7 @@
 			</form>
 		</section>
 
-	
+		
 
-</body>
+	</body>
 </html>

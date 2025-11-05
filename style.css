@@ -1,0 +1,23 @@
+.jura-font {
+		font-family: "Jura", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: <weight>;
+		font-style: normal;
+}
+.glow {
+		-webkit-box-shadow:0px 0px 85px 45px rgba(82,47,207,0.45);
+		-moz-box-shadow: 0px 0px 85px 45px rgba(82,47,207,0.45);
+		box-shadow: 0px 0px 85px 45px rgba(82,47,207,0.45);
+}
+#cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 40px;
+		height: 40px;
+		border: 1px #512FCF solid;
+		border-radius: 50%;
+		pointer-events: none; /* allows clicks through the circle */
+		transform: translate(-50%, -50%); /* center on cursor */
+		z-index: 9999;
+}
